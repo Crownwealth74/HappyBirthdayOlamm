@@ -1,0 +1,171 @@
+body{
+    margin: 0px;
+    min-height: 100vh;
+    background-color: rgb(90, 4, 12);
+
+}
+
+.image img{
+    position:relative;
+    top: 100px;
+    left: 20px;
+    width: 45vw;
+    border-radius: 10px;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 60px;
+    height: 60vh;
+}
+
+.content{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.content h1{
+    color: rgb(252, 253, 253);
+    font-family: cursive;
+    
+}
+.content h4{
+    margin: 0%;
+    color: rgb(243, 236, 236);
+}
+
+.content p{
+
+    font-size: larger;
+    padding-right: 30px;
+    color: wheat;
+}
+
+.count{
+    display: flex;
+    flex-direction: row;
+    gap: 40px ;
+}
+
+.time{
+    background-color: rgb(107, 10, 10);
+    width: 120px;
+    height: 100px;
+}
+
+.time p{
+    
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    color: rgb(236, 220, 236);
+    margin: 0px;
+
+}
+
+.time h1{
+    margin: 0px;
+    color: rgb(230, 224, 230);
+    text-align: center;
+}
+
+.hearts{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+body {
+  text-align: center;
+  background-color: #4b0202;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.hidden {
+  display: none;
+}
+
+#countdown {
+  font-size: 2em;
+  margin-top: 30px;
+  color: #ff4081;
+  font-weight: bold;
+}
+
+/* Accessibility helpers for responsive video and touch targets */
+.responsive-video { position: relative; width: 90%; max-width: 900px; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 0 auto; }
+.responsive-video video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; border-radius: 10px; }
+.sr-only { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+button, a, video { min-height: 44px; min-width: 44px; }
+html { font-size: 16px; }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .countdown {
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+    height: auto;
+  }
+
+  .image img {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .content {
+    padding-top: 20px;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .content h4 {
+    font-size: 14px;
+  }
+
+  .content p {
+    font-size: 12px;
+    padding-right: 0;
+  }
+
+  .count {
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .time {
+    flex: 1;
+    min-width: 60px;
+    width: auto;
+    height: 60px;
+  }
+
+  .time p {
+    font-size: 20px;
+  }
+
+  .time h1 {
+    font-size: 10px;
+  }
+
+  .hearts {
+    font-size: 28px;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
